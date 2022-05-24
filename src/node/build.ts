@@ -5,6 +5,7 @@ import {
   ILoaderExcludePipe,
   ILoaderIncludePipe,
   ILoaderOptionsPipe,
+  IBuildViteConfigPipe,
 } from '../utils/define';
 
 export const pipeConfig = (pipe: IBuildConfigPipe) => {
@@ -57,4 +58,8 @@ export const pipeLessExclude = (pipe: ILoaderExcludePipe) => {
 
 export const afterProdBuild = (callback: IAfterProdBuild) => {
   plugin.buildAfterProdBuild.push(callback);
+};
+
+export const pipeViteConfig = (pipe: IBuildViteConfigPipe) => {
+  plugin.buildViteConfigPipes.push(pipe);
 };

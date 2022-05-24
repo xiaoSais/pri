@@ -15,6 +15,7 @@ import { prettierConfig } from '../../../utils/prettier-config';
 import * as projectState from '../../../utils/project-state';
 import { tempJsEntryPath, tempPath } from '../../../utils/structor-config';
 import { runWebpack, bundleDlls } from '../../../utils/webpack';
+import { debugProjectWithVite } from './vite-dev';
 import { runWebpackDevServer } from '../../../utils/webpack-dev-server';
 import dashboardClientServer from './dashboard/server/client-server';
 import dashboardServer from './dashboard/server/index';
@@ -25,6 +26,8 @@ const dashboardBundleFileName = 'main';
 export const projectDev = async (options: any) => {
   if (options && options.debugDashboard) {
     await debugDashboard();
+  } else if ((options && options.useVite) || globalState.sourceConfig.vite) {
+    await debugProjectWithVite(options);
   } else {
     await debugProject(options);
   }
@@ -165,7 +168,7 @@ async function debugProject(options?: any) {
   });
 }
 
-function debugProjectPrepare(dashboardClientPort: number) {
+export function debugProjectPrepare(dashboardClientPort: number) {
   pri.project.onCreateEntry((__, entry) => {
     if (pri.isDevelopment) {
       entry.pipeEnvironmentBody(envText => {

@@ -1,5 +1,6 @@
 import * as path from 'path';
 import { Configuration } from 'webpack';
+import { InlineConfig } from 'vite';
 import { Entry } from './create-entry';
 
 export interface PackageJson {
@@ -352,6 +353,11 @@ export class ProjectConfig {
    * Publish config for npm publish
    */
   public publishConfig?: IPublishConfig;
+
+  /**
+   * Start project use vite
+   */
+  public vite?: boolean = false;
 }
 
 export type SetPipe = (pipeName: string, callback: PipeCallback) => void;
@@ -364,6 +370,8 @@ export type IAnalyseProject = (
 export type ICreateEntry = (analyseInfo?: any, entry?: Entry) => void;
 
 export type IBuildConfigPipe = (config: Configuration) => Configuration | Promise<Configuration>;
+
+export type IBuildViteConfigPipe = (config: InlineConfig) => InlineConfig | Promise<InlineConfig>;
 
 export type ILoaderOptionsPipe = (options: any) => any;
 export type ILoaderIncludePipe = (paths: (string | RegExp)[]) => any;

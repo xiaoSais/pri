@@ -21,6 +21,7 @@ import {
   ProjectType,
   IDevDllList,
   IJestConfigPipe,
+  IBuildViteConfigPipe,
 } from './define';
 import { getBabelOptions } from './babel-options';
 import { tempPath, srcPath } from '../node';
@@ -50,6 +51,8 @@ export class IPluginConfig {
   public analyseInfo?: any = {};
 
   public commands?: CommandRegister[] = [];
+
+  public buildViteConfigPipes: IBuildViteConfigPipe[] = [];
 
   public buildConfigPipes: IBuildConfigPipe[] = [];
 

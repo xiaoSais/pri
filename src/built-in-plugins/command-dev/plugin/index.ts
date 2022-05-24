@@ -16,6 +16,10 @@ pri.commands.registerCommand({
       alias: 'p',
       description: 'specify paths to build',
     },
+    useVite: {
+      alias: 'vi',
+      description: 'Start project with vite',
+    },
   },
   description: text.commander.dev.description,
   action: async (options: any) => {
