@@ -9,6 +9,7 @@ import * as project from './project/index';
 import * as self from './self';
 import * as serviceWorker from './service-worker';
 import * as webpackCommand from './webpack';
+import * as viteCommand from './vite';
 import * as test from './test';
 
 type IPri = typeof globalState &
@@ -46,6 +47,11 @@ type IPri = typeof globalState &
      */
     webpack: typeof webpackCommand;
 
+    /**
+     * run  vite directly
+     */
+    vite: typeof viteCommand;
+
     event: typeof priEvent;
     /**
      * Test configs
@@ -65,6 +71,7 @@ if (!globalWithPri.pri) {
     serviceWorker,
     event: priEvent,
     webpack: webpackCommand,
+    vite: viteCommand,
     cli,
     test,
     ...self,
