@@ -358,6 +358,11 @@ export class ProjectConfig {
    * Start project use vite
    */
   public vite?: boolean = false;
+
+  /**
+   * Disable dashboard ui
+   */
+  public disableDashboard: boolean;
 }
 
 export type SetPipe = (pipeName: string, callback: PipeCallback) => void;
@@ -407,3 +412,4 @@ export interface IPublishConfig {
   // Allow publish branch
   publishBranch?: string;
 }
+export type IAfterTestRun = (result?: any) => any;

@@ -22,6 +22,7 @@ import {
   IDevDllList,
   IJestConfigPipe,
   IBuildViteConfigPipe,
+  IAfterTestRun,
 } from './define';
 import { getBabelOptions } from './babel-options';
 import { tempPath, srcPath } from '../node';
@@ -97,6 +98,8 @@ export class IPluginConfig {
   public devDllPipes: IDevDllList[] = [];
 
   public jestConfigPipes: IJestConfigPipe[] = [];
+
+  public afterTestRunCallbacks: IAfterTestRun[] = [];
 
   // Lock init type
   public initType: ProjectType = null;
