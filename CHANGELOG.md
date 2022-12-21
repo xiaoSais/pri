@@ -1,5 +1,5 @@
-<a name="5.0.0-beta.13"></a>
-# [5.0.0-beta.13](https://github.com/prijs/pri/compare/3.3.28-beta.5...5.0.0-beta.13) (2022-05-25)
+<a name="5.0.0-beta.14"></a>
+# [5.0.0-beta.14](https://github.com/prijs/pri/compare/3.3.28-beta.5...5.0.0-beta.14) (2022-10-27)
 
 
 ### Bug Fixes
@@ -73,8 +73,10 @@
 * replace with node-compatible fetch, fix lint glob pattern ([044838b](https://github.com/prijs/pri/commit/044838b))
 * rm global no-console ([bc216db](https://github.com/prijs/pri/commit/bc216db))
 * temp file type error ([b39284b](https://github.com/prijs/pri/commit/b39284b))
+* test ([967f0e6](https://github.com/prijs/pri/commit/967f0e6))
 * type ([f67ca43](https://github.com/prijs/pri/commit/f67ca43))
 * update ([722c764](https://github.com/prijs/pri/commit/722c764))
+* update fork-ts-checker-webpack-plugin ([0caed8e](https://github.com/prijs/pri/commit/0caed8e))
 * use sync mode when process.stdio is connected to pipe ([9eb7a50](https://github.com/prijs/pri/commit/9eb7a50))
 * version ([3b8c0f1](https://github.com/prijs/pri/commit/3b8c0f1))
 * version ([fe2136b](https://github.com/prijs/pri/commit/fe2136b))
@@ -86,12 +88,13 @@
 * 合并scss和less编译 ([75b3d53](https://github.com/prijs/pri/commit/75b3d53))
 * 增加pri配置项，去除某些不必要发布的包配置 ([adc2ea6](https://github.com/prijs/pri/commit/adc2ea6))
 * 增加pri配置项，去除某些不必要发布的包配置 ([516279f](https://github.com/prijs/pri/commit/516279f))
-* add changeLog to publish script ([66526f7](https://github.com/prijs/pri/commit/66526f7))
+* add disableDashboard config ([6df480d](https://github.com/prijs/pri/commit/6df480d))
 * add esm5 field ([8e20b94](https://github.com/prijs/pri/commit/8e20b94))
 * add feat/speedMeasure ([940e817](https://github.com/prijs/pri/commit/940e817))
 * add path ([7cc1705](https://github.com/prijs/pri/commit/7cc1705))
 * add readme copy logic ([f25a27c](https://github.com/prijs/pri/commit/f25a27c))
 * add readme copy logic ([597da6a](https://github.com/prijs/pri/commit/597da6a))
+* after test run ([18aee53](https://github.com/prijs/pri/commit/18aee53))
 * deploy 4.2.5 ([16a2024](https://github.com/prijs/pri/commit/16a2024))
 * devServer 支持ForkTsCheckerWebpackPlugin async 配置 ([b7b2cd9](https://github.com/prijs/pri/commit/b7b2cd9))
 * devserver support config wrapper ([d879bc4](https://github.com/prijs/pri/commit/d879bc4))
@@ -133,6 +136,7 @@
 * 校验 tnpm 包发布权限 ([3ca427b](https://github.com/prijs/pri/commit/3ca427b))
 * add [@babel](https://github.com/babel)/plugin-transform-react-display-name ([20a9c51](https://github.com/prijs/pri/commit/20a9c51))
 * add babelPluginReactWrappedDisplayName ([6dd820e](https://github.com/prijs/pri/commit/6dd820e))
+* add changeLog to publish script ([66526f7](https://github.com/prijs/pri/commit/66526f7))
 * add ensure files config ([2e78cc5](https://github.com/prijs/pri/commit/2e78cc5))
 * add hotLoader option ([52c8bdb](https://github.com/prijs/pri/commit/52c8bdb))
 * add hotLoader option ([ceb6f48](https://github.com/prijs/pri/commit/ceb6f48))
