@@ -1,5 +1,5 @@
-<a name="5.0.0-beta.14"></a>
-# [5.0.0-beta.14](https://github.com/prijs/pri/compare/3.3.28-beta.5...5.0.0-beta.14) (2022-10-27)
+<a name="5.0.0-beta.15"></a>
+# [5.0.0-beta.15](https://github.com/prijs/pri/compare/3.3.28-beta.5...5.0.0-beta.15) (2022-12-21)
 
 
 ### Bug Fixes
@@ -22,8 +22,12 @@
 * bug ([c37b05b](https://github.com/prijs/pri/commit/c37b05b))
 * bug ([b65ab71](https://github.com/prijs/pri/commit/b65ab71))
 * bug ([3510f52](https://github.com/prijs/pri/commit/3510f52))
+* bugs ([be989c2](https://github.com/prijs/pri/commit/be989c2))
 * change file name ([531c37e](https://github.com/prijs/pri/commit/531c37e))
 * change file name ([c22ebb4](https://github.com/prijs/pri/commit/c22ebb4))
+* changelog ([7e5dc39](https://github.com/prijs/pri/commit/7e5dc39))
+* changelog ([9410a85](https://github.com/prijs/pri/commit/9410a85))
+* changelog ([6de42f1](https://github.com/prijs/pri/commit/6de42f1))
 * chunk css extract ([55e47c8](https://github.com/prijs/pri/commit/55e47c8))
 * circular detect exclude ([7995320](https://github.com/prijs/pri/commit/7995320))
 * comment react-loadable code ([7264b29](https://github.com/prijs/pri/commit/7264b29))
@@ -39,6 +43,7 @@
 * doc devUrl ([4c2ec7c](https://github.com/prijs/pri/commit/4c2ec7c))
 * eslint ([e592b8e](https://github.com/prijs/pri/commit/e592b8e))
 * eslint no-shadow ([4d0368c](https://github.com/prijs/pri/commit/4d0368c))
+* excludeRootDepList ([bc2eb53](https://github.com/prijs/pri/commit/bc2eb53))
 * execSync with reasonable args length ([22342bb](https://github.com/prijs/pri/commit/22342bb))
 * file name to lower case ([c97bded](https://github.com/prijs/pri/commit/c97bded))
 * fix publish error situation ([03ff947](https://github.com/prijs/pri/commit/03ff947))
@@ -56,6 +61,7 @@
 * nested node_modules ([8e79cce](https://github.com/prijs/pri/commit/8e79cce))
 * npm ([775cb7c](https://github.com/prijs/pri/commit/775cb7c))
 * npm ([e7595d2](https://github.com/prijs/pri/commit/e7595d2))
+* npm publish ([9815353](https://github.com/prijs/pri/commit/9815353))
 * npm test support packages alias name ([7bacda9](https://github.com/prijs/pri/commit/7bacda9))
 * npmClient for publish ([7fcb940](https://github.com/prijs/pri/commit/7fcb940))
 * npx ([18e799c](https://github.com/prijs/pri/commit/18e799c))
