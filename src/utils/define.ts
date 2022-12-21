@@ -408,8 +408,11 @@ export type IDevDllList = (list: string[]) => string[];
 
 export type IJestConfigPipe = (options: any) => any;
 
+export type IAfterTestRun = (result?: any) => any;
+
 export interface IPublishConfig {
   // Allow publish branch
   publishBranch?: string;
+  // Exclude root dep list
+  excludeRootDepList?: string[];
 }
-export type IAfterTestRun = (result?: any) => any;

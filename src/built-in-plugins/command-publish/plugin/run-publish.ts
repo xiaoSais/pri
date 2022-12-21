@@ -21,10 +21,8 @@ import { README_FILE } from '../../../utils/constants';
 
 export const publish = async (options: PublishOption) => {
   const currentBranchName = options.branch ? options.branch : await getCurrentBranchName();
-  const configPublishBranch = pri.projectConfig?.publishConfig?.publishBranch;
-  const isDevelopBranch = (configPublishBranch ? [configPublishBranch] : ['master', 'develop']).includes(
-    currentBranchName,
-  );
+  const developBranchConfig = _.get(pri.projectConfig, 'customEnv.developBranchConfig.publishBranch', []);
+  const isDevelopBranch = ['master', 'develop', ...developBranchConfig].includes(currentBranchName);
 
   switch (pri.sourceConfig.type) {
     case 'component':
@@ -429,6 +427,9 @@ async function addMissingDeps(
     };
   }
 
+  // Exclude root dep list
+  const excludeRootDepList = pri.projectConfig.publishConfig?.excludeRootDepList || ['react', 'react-dom', 'antd'];
+
   if (depMap) {
     const { depMonoPackages, depNpmPackages } = depMap.get(sourceType);
 
@@ -476,7 +477,7 @@ async function addMissingDeps(
       newPackageJson.dependencies = {
         ...newPackageJson.dependencies,
         ...depNpmPackages
-          .filter(npmName => !['react', 'react-dom', 'antd'].includes(npmName))
+          .filter(npmName => !excludeRootDepList.includes(npmName))
           .reduce((root, next) => {
             if (!sourceDeps[next]) {
               logFatal(
