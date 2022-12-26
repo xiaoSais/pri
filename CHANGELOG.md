@@ -1,5 +1,5 @@
-<a name="5.0.0-beta.15"></a>
-# [5.0.0-beta.15](https://github.com/prijs/pri/compare/3.3.28-beta.5...5.0.0-beta.15) (2022-12-21)
+<a name="5.0.0-beta.16"></a>
+# [5.0.0-beta.16](https://github.com/prijs/pri/compare/3.3.28-beta.5...5.0.0-beta.16) (2022-12-26)
 
 
 ### Bug Fixes
@@ -84,6 +84,7 @@
 * update ([722c764](https://github.com/prijs/pri/commit/722c764))
 * update fork-ts-checker-webpack-plugin ([0caed8e](https://github.com/prijs/pri/commit/0caed8e))
 * use sync mode when process.stdio is connected to pipe ([9eb7a50](https://github.com/prijs/pri/commit/9eb7a50))
+* version ([dabc985](https://github.com/prijs/pri/commit/dabc985))
 * version ([3b8c0f1](https://github.com/prijs/pri/commit/3b8c0f1))
 * version ([fe2136b](https://github.com/prijs/pri/commit/fe2136b))
 * WrapContent plugin ([7dffb13](https://github.com/prijs/pri/commit/7dffb13))
@@ -98,6 +99,7 @@
 * add esm5 field ([8e20b94](https://github.com/prijs/pri/commit/8e20b94))
 * add feat/speedMeasure ([940e817](https://github.com/prijs/pri/commit/940e817))
 * add path ([7cc1705](https://github.com/prijs/pri/commit/7cc1705))
+* add pri.devService.pipeConfig, all modify webpackDevServerConfig ([7c607da](https://github.com/prijs/pri/commit/7c607da))
 * add readme copy logic ([f25a27c](https://github.com/prijs/pri/commit/f25a27c))
 * add readme copy logic ([597da6a](https://github.com/prijs/pri/commit/597da6a))
 * after test run ([18aee53](https://github.com/prijs/pri/commit/18aee53))
@@ -114,13 +116,13 @@
 * production mode useHtmlTemplate ([ef6c951](https://github.com/prijs/pri/commit/ef6c951))
 * project support multiple entry ([a57e664](https://github.com/prijs/pri/commit/a57e664))
 * publish .9 ([88f3d60](https://github.com/prijs/pri/commit/88f3d60))
-* remove  ensure root package.json for extend type ([0ad22e6](https://github.com/prijs/pri/commit/0ad22e6))
 * remove node-sass ([fba2433](https://github.com/prijs/pri/commit/fba2433))
 * run test support testRegex ([3184685](https://github.com/prijs/pri/commit/3184685))
 * support bundle dev dll ([e533954](https://github.com/prijs/pri/commit/e533954))
 * support customize jest config ([fd1fd15](https://github.com/prijs/pri/commit/fd1fd15))
 * support devServer contentBase ([63efe84](https://github.com/prijs/pri/commit/63efe84))
 * support disable html-webpack-plugin ([fdd79a5](https://github.com/prijs/pri/commit/fdd79a5))
+* support disableDllWhenDev and disableDllWrapWhenDev configuration ([cd31df7](https://github.com/prijs/pri/commit/cd31df7))
 * support docs custom index.ejs index.tsx ([653038b](https://github.com/prijs/pri/commit/653038b))
 * support eslint in dev mode ([45e3f0d](https://github.com/prijs/pri/commit/45e3f0d))
 * support material component ([caf27b3](https://github.com/prijs/pri/commit/caf27b3))
@@ -162,6 +164,7 @@
 * fix bug ([5c6e107](https://github.com/prijs/pri/commit/5c6e107))
 * fix bug ([ecbe690](https://github.com/prijs/pri/commit/ecbe690))
 * fix memo name ([a5ea73d](https://github.com/prijs/pri/commit/a5ea73d))
+* remove  ensure root package.json for extend type ([0ad22e6](https://github.com/prijs/pri/commit/0ad22e6))
 * remove react-loadable instead of react.lazy ([be8bcbd](https://github.com/prijs/pri/commit/be8bcbd))
 * rename rootId to projectRootId ([f03aa40](https://github.com/prijs/pri/commit/f03aa40))
 * revert webpack version ([a022d94](https://github.com/prijs/pri/commit/a022d94))
