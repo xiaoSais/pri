@@ -1,6 +1,7 @@
 import * as path from 'path';
 import { Configuration } from 'webpack';
 import { InlineConfig } from 'vite';
+import * as WebpackDevServer from 'webpack-dev-server';
 import { Entry } from './create-entry';
 
 export interface PackageJson {
@@ -355,6 +356,16 @@ export class ProjectConfig {
   public publishConfig?: IPublishConfig;
 
   /**
+   * Disable dll in dev mode
+   */
+  public disableDllWhenDev: boolean;
+
+  /**
+   * If disable, pri will not wrap dllScript to entry js in dev mode, your should wrap dllScript to html by yourself
+   */
+  public disableDllWrapWhenDev: boolean;
+
+  /**
    * Start project use vite
    */
   public vite?: boolean = false;
@@ -405,6 +416,10 @@ export interface IPluginModule {
 }
 
 export type IDevDllList = (list: string[]) => string[];
+
+export type IDevServerConfigPipe = (
+  config: WebpackDevServer.Configuration,
+) => WebpackDevServer.Configuration | Promise<WebpackDevServer.Configuration>;
 
 export type IJestConfigPipe = (options: any) => any;
 

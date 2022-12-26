@@ -71,6 +71,9 @@ async function debugProject(options?: any) {
   const dashboardClientPort = await portfinder.getPortPromise({ port: freePort + 2 });
 
   const pipeConfig = async (config: webpack.Configuration) => {
+    if (pri.sourceConfig.disableDllWhenDev || pri.sourceConfig.disableDllWrapWhenDev) {
+      return config;
+    }
     const dllHttpPath = urlJoin(
       `${globalState.sourceConfig.useHttps ? 'https' : 'http'}://${pri.sourceConfig.host}:${freePort}`,
       libraryStaticPath,
@@ -102,7 +105,9 @@ async function debugProject(options?: any) {
     return scopeAnalyseInfo;
   });
 
-  await bundleDlls({ dllOutPath, dllFileName, dllMainfestName });
+  if (!pri.sourceConfig.disableDllWhenDev) {
+    await bundleDlls({ dllOutPath, dllFileName, dllMainfestName });
+  }
 
   if (globalState.sourceConfig.useHttps) {
     logInfo('you should set chrome://flags/#allow-insecure-localhost, to trust local certificate.');
@@ -316,6 +321,9 @@ export function debugProjectPrepare(dashboardClientPort: number) {
   if (pri.majorCommand === 'dev') {
     pri.build.pipeConfig(config => {
       if (!pri.isDevelopment) {
+        return config;
+      }
+      if (pri.sourceConfig.disableDllWhenDev) {
         return config;
       }
 

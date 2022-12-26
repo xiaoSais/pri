@@ -20,6 +20,7 @@ import {
   CommandRegister,
   ProjectType,
   IDevDllList,
+  IDevServerConfigPipe,
   IJestConfigPipe,
   IBuildViteConfigPipe,
   IAfterTestRun,
@@ -96,6 +97,8 @@ export class IPluginConfig {
   public lintFilters: ILintFilter[] = [];
 
   public devDllPipes: IDevDllList[] = [];
+
+  public devServerConfigPipes: IDevServerConfigPipe[] = [];
 
   public jestConfigPipes: IJestConfigPipe[] = [];
 
