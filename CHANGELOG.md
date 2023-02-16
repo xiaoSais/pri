@@ -1,5 +1,5 @@
-<a name="5.0.0-beta.17"></a>
-# [5.0.0-beta.17](https://github.com/prijs/pri/compare/3.3.28-beta.5...5.0.0-beta.17) (2023-01-30)
+<a name="5.0.0-beta.18"></a>
+# [5.0.0-beta.18](https://github.com/prijs/pri/compare/3.3.28-beta.5...5.0.0-beta.18) (2023-02-06)
 
 
 ### Bug Fixes
@@ -66,6 +66,7 @@
 * npm test support packages alias name ([7bacda9](https://github.com/prijs/pri/commit/7bacda9))
 * npmClient for publish ([7fcb940](https://github.com/prijs/pri/commit/7fcb940))
 * npx ([18e799c](https://github.com/prijs/pri/commit/18e799c))
+* package.json ([72ebd4f](https://github.com/prijs/pri/commit/72ebd4f))
 * publish error ([594cec5](https://github.com/prijs/pri/commit/594cec5))
 * publish error ([d06c26e](https://github.com/prijs/pri/commit/d06c26e))
 * publish error ([c813439](https://github.com/prijs/pri/commit/c813439))
