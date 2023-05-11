@@ -1,5 +1,5 @@
-<a name="5.0.0-beta.18"></a>
-# [5.0.0-beta.18](https://github.com/prijs/pri/compare/3.3.28-beta.5...5.0.0-beta.18) (2023-02-06)
+<a name="5.0.0-beta.19"></a>
+# [5.0.0-beta.19](https://github.com/prijs/pri/compare/3.3.28-beta.5...5.0.0-beta.19) (2023-05-11)
 
 
 ### Bug Fixes
@@ -18,6 +18,8 @@
 * analyse output ([39c6c0c](https://github.com/prijs/pri/commit/39c6c0c))
 * auth selected package ([6987871](https://github.com/prijs/pri/commit/6987871))
 * autofix package.version while betaBranch ([596b803](https://github.com/prijs/pri/commit/596b803))
+* babel ([015ae00](https://github.com/prijs/pri/commit/015ae00))
+* babel ([54790e6](https://github.com/prijs/pri/commit/54790e6))
 * babel-loader options ([01ec7be](https://github.com/prijs/pri/commit/01ec7be))
 * bug ([c37b05b](https://github.com/prijs/pri/commit/c37b05b))
 * bug ([b65ab71](https://github.com/prijs/pri/commit/b65ab71))
