@@ -1,10 +1,11 @@
-<a name="5.0.0-beta.19"></a>
-# [5.0.0-beta.19](https://github.com/prijs/pri/compare/3.3.28-beta.5...5.0.0-beta.19) (2023-05-11)
+<a name="5.0.0-beta.20"></a>
+# [5.0.0-beta.20](https://github.com/prijs/pri/compare/3.3.28-beta.5...5.0.0-beta.20) (2023-06-19)
 
 
 ### Bug Fixes
 
 * 判断包名都用package.json中的name ([29e33df](https://github.com/prijs/pri/commit/29e33df))
+* 使用reject替代throw，使得child_process子进程可以以异常状态退出 ([ed9d17d](https://github.com/prijs/pri/commit/ed9d17d))
 * 修复子package互相引用的时候，测试报错的问题 ([55570a9](https://github.com/prijs/pri/commit/55570a9))
 * 修复组件编译模式无差别产生 sourcemap ([06a444f](https://github.com/prijs/pri/commit/06a444f))
 * 子包路由解析问题 ([37da1be](https://github.com/prijs/pri/commit/37da1be))
@@ -87,6 +88,7 @@
 * type ([f67ca43](https://github.com/prijs/pri/commit/f67ca43))
 * update ([722c764](https://github.com/prijs/pri/commit/722c764))
 * update fork-ts-checker-webpack-plugin ([0caed8e](https://github.com/prijs/pri/commit/0caed8e))
+* upgrade babel ([1f8aa7d](https://github.com/prijs/pri/commit/1f8aa7d))
 * use sync mode when process.stdio is connected to pipe ([9eb7a50](https://github.com/prijs/pri/commit/9eb7a50))
 * version ([dabc985](https://github.com/prijs/pri/commit/dabc985))
 * version ([3b8c0f1](https://github.com/prijs/pri/commit/3b8c0f1))
