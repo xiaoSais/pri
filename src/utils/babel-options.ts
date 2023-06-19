@@ -9,6 +9,7 @@ import babelPluginProposalThrowExpressions from '@babel/plugin-proposal-throw-ex
 import babelPluginProposalOptionalChaining from '@babel/plugin-proposal-optional-chaining';
 import babelPluginProposalNullishCoalescingOperator from '@babel/plugin-proposal-nullish-coalescing-operator';
 import babelPluginSyntaxDynamicImport from '@babel/plugin-syntax-dynamic-import';
+import babelPluginProposalPrivateMethods from '@babel/plugin-proposal-private-methods';
 import babelPluginSyntaxImportMeta from '@babel/plugin-syntax-import-meta';
 import transformRuntime from '@babel/plugin-transform-runtime';
 import babelPresetEnv from '@babel/preset-env';
@@ -32,7 +33,7 @@ export function getBabelOptions(options?: Partial<DefaultOptions>) {
     babelrc: false,
     comments: globalState.isDevelopment,
     presets: [
-      [babelPresetEnv, { modules: mergedOptions.modules, loose: true }],
+      [babelPresetEnv, { modules: mergedOptions.modules}],
       [babelPresetReact],
       [babelPresetTypescript],
     ],
@@ -50,6 +51,7 @@ export function getBabelOptions(options?: Partial<DefaultOptions>) {
       [babelPluginSyntaxDynamicImport],
       [babelPluginSyntaxImportMeta],
       [babelPluginProposalClassProperties, { loose: true }],
+      [babelPluginProposalPrivateMethods, { loose: true }],
       [babelPluginProposalJsonStrings],
       [babelPluginProposalOptionalCatchBinding],
       ...mergedOptions.plugins,
