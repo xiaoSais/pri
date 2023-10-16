@@ -1,5 +1,5 @@
-<a name="5.0.0-beta.20"></a>
-# [5.0.0-beta.20](https://github.com/prijs/pri/compare/3.3.28-beta.5...5.0.0-beta.20) (2023-06-19)
+<a name="5.0.0-beta.21"></a>
+# [5.0.0-beta.21](https://github.com/prijs/pri/compare/3.3.28-beta.5...5.0.0-beta.21) (2023-06-19)
 
 
 ### Bug Fixes
